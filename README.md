@@ -1,2 +1,2 @@
 # 2-JavaScript
- Aprendendo a criar interações em JS
+ Aprendendo a criar interações com JS
