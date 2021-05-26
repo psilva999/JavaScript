@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="">
+    <title>Rocky | Stay | Click</title>
+
+    <script>
+      //variável recebendo 'false' como valor
+      var hard = false
+      function rockyMuda(Modo) {
+
+        if (Modo == 1) { Imagem = "images/winner.jpg" }
+
+        if (Modo == 2) { Imagem = "images/rocky-drago.jpg" }
+
+        if (Modo == 3) { Imagem = "images/hit.jpg" }
+
+        if (!hard) {
+          document.getElementById ("balboa").src = Imagem
+
+          //Momento em que a variável inicial muda para 'true' quando o usuário clica na imagem
+          if (Modo == 3) { hard = true }
+        }
+      }
+
+    </script>
+</head>
+
+<body> <h1>Imagem muda ao passar e clicar com o mouse</h1>
+  <img src="images/rocky-drago.jpg" id="balboa" onmouseover="rockyMuda(1)" onmouseout="rockyMuda(2)" onclick="rockyMuda(3)">
+
+</body>
+</html>

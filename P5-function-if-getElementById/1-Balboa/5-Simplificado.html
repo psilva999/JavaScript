@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="">
+    <title>Rocky | Simplificado</title>
+
+    <script>
+      //Aprendi a simplificar ainda mais o código utilizando o getElementById e dois 'if' 
+      var hard = false
+      function rockyMuda(Modo) {
+
+        if (!hard) {
+          document.getElementById ("balboa").src = "images/" + Modo + ".jpg"
+
+          if (Modo == 'hit') { hard = true }
+        }
+      }
+
+    </script>
+</head>
+
+<body> <h1>Imagem muda ao passar ou clicar com o mouse</h1>
+  <img src="images/rocky-drago.jpg" id="balboa" onmouseover="rockyMuda('winner')" onmouseout="rockyMuda('rocky-drago')" onclick="rockyMuda('hit')">
+
+</body>
+</html>

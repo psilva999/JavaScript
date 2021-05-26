@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="">
+    <title>Rocky With If</title>
+
+    <script>
+      function rockyMuda(modo) {
+        // sequência de três 'if' indicando as condições para cada interatividade com o usuário
+        if (modo == 1) {
+          Imagem = "images/winner.jpg"
+        }
+
+        if (modo == 2) {
+          Imagem = "images/rocky-drago.jpg"
+        }
+
+        if (modo == 3) {
+          Imagem = "images/hit.jpg"
+        }
+        document.getElementById ("balboa").src = Imagem
+      }
+    </script>
+</head>
+
+<body> <h1>Imagem ao passar e clicar com o mouse</h1>
+  <img src="images/rocky-drago.jpg" id="balboa" onmouseover="rockyMuda(1)" onmouseout="rockyMuda(2)" onclick="rockyMuda(3)">
+
+</body>
+</html>

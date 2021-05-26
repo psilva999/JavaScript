@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="">
+    <title>Rocky | Move</title>
+
+    <script>
+      //function indicando que a imagem mudará ao passar o mouse
+      function rockyWinner() {
+        //getElement indicando que o 'id' da imagem será utilizado para mudar a imagem
+        document.getElementById ("rocky").src = "images/winner.jpg"
+      }
+
+    </script>
+</head>
+
+<body> <h1>Imagem muda ao passar o mouse</h1>
+  <!--onmousemove indicando que uma interatividade ocorrerá quando o mouse passar
+  por cima da imagem-->
+  <img src="images/rocky-drago.jpg" id="rocky" onmousemove="rockyWinner()">
+
+</body>
+</html>
