@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+  /* Configurações válidas para toda a página */
+  body { background-color:#F2F2F2; font-family:Calibri; }
+
+
+  /* Cabeçalho */
+  header {
+    background-color:#FBB61C;
+    border-radius:60px;
+    position:sticky;
+    width:55%;
+    display:block;
+    margin:auto;
+    padding:9px;
+  }
+
+  header h1, span { text-align:center; }
+
+  header span { font-size:20px; }
+
+
+  /* Responsividade */
+  @media screen and (max-width:900px) {
+    header { width:65%; }
+  }
+
+  @media screen and (max-width:768px) {
+    header { width:80%; }
+  }
