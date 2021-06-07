@@ -1,3 +1,15 @@
 @charset "UTF-8";
 
-  section { background-color:#F5BB1B; }
+  section { width:50%; display:block; margin:auto; }
+
+  article { background-color:#02DBA5; border-radius:50px; margin:8px; padding:5px; }
+
+  article h1 { font-size:25px; text-align:center; }
+
+  article code { font-size:18px; }
+
+  article p { font-size:20px; }
+
+  @media screen and (max-width:890px) {
+    section { width:85%; }
+  }

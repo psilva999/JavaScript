@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
-  /* Criando um menuBurguer */
-
-  nav { width:30%; display:block; margin:auto; }
+  nav { width:30%; display:block; margin:auto; top:0; position:sticky; }
 
 
   /* Ajustando o menuBurguer */
@@ -20,20 +18,20 @@
 
 
   /* Comportamento da lista não ordenada */
-  ul { background-color:#FBB61C; border-radius:60px; display:none; width:45%; padding:5px; }
+  ul { background-color:#FBB61C; border-radius:60px; display:none; padding:5px; }
 
   li, a { box-sizing:border-box; display:block; margin:20px; }
 
 
   /* Responsividade */
   @media screen and (max-width:1300px) {
-    ul { width:60%; }
+    ul { width:90%; }
   }
 
-  @media screen and (max-width:1100px) {
-    ul { width:80%; }
+  @media screen and (max-width:1250px) {
+    ul { width:90%; }
   }
 
   @media screen and (max-width:900px) {
-    ul { width:160%; }
+    ul { width:200%; }
   }

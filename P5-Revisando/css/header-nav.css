@@ -5,14 +5,12 @@
 
 
   /* Cabeçalho */
+  header, nav { background-color:#FBB61C; border-radius:60px; padding:9px; }
+
   header {
-    background-color:#FBB61C;
-    border-radius:60px;
-    position:sticky;
     width:55%;
     display:block;
     margin:auto;
-    padding:9px;
   }
 
   header h1, span { text-align:center; }
