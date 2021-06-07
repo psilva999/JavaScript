@@ -1,4 +1,4 @@
-  var aprendendo = 'JavaScript teste'
+  var aprendendo = 'JavaScript'
 
   /* length conta quantas letras tem na variável ou frase
   (espaço, hífen e vírgula entre as palavras ou frases também conta) */
