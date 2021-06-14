@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="shortcut icon" type="image/x-icon" href=".ico">
+  <link rel="stylesheet" href="style.css">
+
+  <title>style, charset, URL and navigator.appName</title>
+  <meta charset="UTF-8">
+
+  <script>
+    //Mostra a configuração de caracteres
+    document.write (document.charset)
+
+    //Mostra a URL
+    document.write ("<br>" + document.URL)
+
+    //Detalha qual navegador o usuário utiliza
+    document.write ("<br>" + navigator.appName)
+
+  </script>
+</head>
+
+<body>  <h1>style, charset, URL and navigator.appName</h1>
+
+  <script>
+    //Não entendi o motivo de não funcionar em script externo ou no <head>
+    var corpo = document.body
+
+    corpo.style.background = 'Orange' //Muda a cor de fundo da página HTML
+  </script>
+</body>
+</html>
