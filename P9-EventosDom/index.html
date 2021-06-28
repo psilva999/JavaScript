@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie-edge">
+
+  <link rel="shortcut icon" type="image/x-icon" href=".ico">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Eventos DOM</title>
+  <meta charset="UTF-8">
+</head>
+
+<body> <h1>Eventos DOM</h1>
+
+  <div id="teste">Interação</div>
+
+  <script>
+    var area = document.querySelector('#teste')
+
+    area.addEventListener('click', clicar)
+    area.addEventListener('mouseover', passar)
+    area.addEventListener('mouseout', sair)
+
+    function clicar() {
+      area.style.background = 'Red'
+      area.innerText = 'Interagiu'
+    }
+
+    function passar() {
+      area.style.background = 'Orange'
+      area.innerText = 'Passou!'
+    }
+
+    function sair() {
+      area.style.background = 'Yellow'
+      area.innerText = 'Saiu!'
+    }
+  </script>
+</body>
+</html>

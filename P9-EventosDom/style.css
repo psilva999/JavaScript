@@ -1,0 +1,13 @@
+@charset 'UTF-8';
+
+body { background-color:#F2F2F2; font-family:Calibri; }
+
+#teste {
+    background-color:orange;
+    border:1px solid Black;
+    width:250px;
+    height:250px;
+    font-size:30px;
+    text-align:center;
+    line-height:240px; 
+}
