@@ -2,12 +2,14 @@
 
 body { background-color:#F2F2F2; font-family:Calibri; }
 
-#teste {
-    background-color:orange;
-    border:1px solid Black;
+#testeEvento {  
+    border-radius:200px;
+    background-color:Orange;
+    font-size:50px;
     width:250px;
     height:250px;
-    font-size:30px;
+    display:block;
+    margin:auto;
+    line-height:250px;
     text-align:center;
-    line-height:240px; 
 }
