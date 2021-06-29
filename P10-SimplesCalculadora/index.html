@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+
+    <link rel="shortcut icon" type="image/x-icon" href=".ico">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Calculadora Simples</title>
+    <script src=".js"></script>
+</head>
+
+<body>
+    <div> <h1>Calculadora Simples</h1>
+        
+        <!--Somar-->
+        <input type="number" id="s1" name="s1"> 
+        <span>+</span>
+
+        <input type="number" id="s2" name="s2">
+        <input type="button" value="Somar" onclick="mostraSoma()">   
+        <p id="resultado-soma">R</p>
+
+
+        <!--Subtrair-->
+        <input type="number" id="m1" name="m1">
+        <span>-</span>
+
+        <input type="number" id="m2" name="m2">
+        <input type="button" id="diminuir" value="Subtrair" onclick="mostraSubtrair()">
+        <p id="resultado-subtrair">R</p>
+
+
+        <!--Multiplicar-->
+        <input type="number" id="v1" name="v1">
+        <span>*</span>
+
+        <input type="number" id="v2" name="v2">
+        <input type="button" value="Vezes" onclick="mostraVezes()">
+        <p id="resultado-multiplica">R</p>
+
+
+        <!--Dividir-->
+        <input type="number" id="d1" name="d1">
+        <span>/</span>
+
+        <input type="number" id="d2" name="d2">
+        <input type="button" value="Dividir" onclick="mostraDividir()">
+        <p id="resultado-divisao">R</p>
+    </div>
+
+</body>
+</html>
