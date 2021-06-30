@@ -1,11 +1,14 @@
 
+//Date() e getDay() no permite saber o dia da semana
 var n1 = new Date()
 var dia = n1.getDay()
 
+//Condicionais múltiplas nos permite criar várias situações de uma maneira mais 'fácil'
 switch (dia) {
 
     case 0:
         document.write ('Domingo')
+        //SEMPRE coloque o break ao final de cada 'case'
         break
 
     case 1:
@@ -34,5 +37,6 @@ switch (dia) {
 
     default:
         document.write ('INVÁLIDO')
+        //Aqui não é obrigatório mas é sempre bom colocar
         break
 } 
