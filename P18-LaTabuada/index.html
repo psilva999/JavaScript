@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+    <title>La Tabuada</title>
+</head>
+
+<body> 
+    <header> <h1>La Tabuada</h1>
+
+        <span>Seus valores tabulescos na palma da sua mão</span>
+    </header>
+
+    <section> 
+        <fieldset> <legend>Insira o valor para ver a tabuada</legend>
+            <p>
+                <label for="numeral">Número:</label>
+                <input type="number" id="numeral" name="numeral">
+
+                <input type="button" value="Conferir" onclick="resultado()">
+            </p>
+        </fieldset>
+        
+
+        <div>
+            <select name="aquiTabuada" id="exibeTabu" size="10">
+                <option>Digíte o número acima</option>
+            </select>
+        </div>
+    </section>
+
+    <footer>
+        <a href="https://github.com/Psilva999" target="_blank">@Psilva999</a> </footer>
+</body>
+
+</html>
