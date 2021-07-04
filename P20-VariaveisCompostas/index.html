@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Variáveis compostas - parte 1</title>
+</head>
+
+<body>
+    <div id="exibeTela"></div>
+
+    <script>
+        //Variável simples
+        let exibidor = document.querySelector('#exibeTela')
+
+        //Variável composta
+        let teste = [8, 4, 6]
+
+        //push para adicionar conteúdo na variável
+        teste.push(9)
+        teste.push(13)
+
+        exibidor.innerHTML += `${teste} <br>`
+
+        //Soma entre dois valores presentes na variável
+        exibidor.innerHTML += `A soma entre ${teste[0]} e ${teste[1]} é igual a ${teste[0] + teste[1]} <br>`
+
+        //Soma entre valores adicionados a variável
+        exibidor.innerHTML += `A soma entre ${teste[3]} e ${teste[4]} é igual a ${teste[3] + teste[4]} <br>`
+
+        //Exibe o conteúdo na terceira chave
+        exibidor.innerHTML += `${teste[3]} é o número armazenado na terceira chave <br>`
+
+        //Mostra o total de chaves na variável
+        exibidor.innerHTML += `Total de chaves: ${teste.length} <br>`
+
+        //Ordena a lista por casas decimais
+        exibidor.innerHTML += `${teste.sort()} <br>`
+
+        //Procura na lista o número indicado
+        exibidor.innerHTML += `${teste.indexOf(4)} <br>`
+
+        //Na situação abaixo, o número indicado não se encontra na lista e -1 será retornado
+        exibidor.innerHTML += `${teste.indexOf(1)}`
+    </script>
+    
+</body>
+</html>
