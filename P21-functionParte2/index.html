@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="style.css">
+
+    <script src=".js"></script>
+    <title>Funções</title>
+</head>
+
+<body>
+    <script>
+
+        //Exibir par ou impar
+        function resultado(n1) {
+
+            if (n1 % 2 == 0) { return `${n1} é par <br>` }
+
+            else if (n1 % 2 == 1) { return `${n1} é impar <br>` }
+        }
+
+        document.write (resultado(7))
+
+        //Soma
+        function outro(n1 = 0, n2 = 0) { return n1 + n2 } //Caso não fosse definido como zero, retornaria NaN
+
+        document.write (`${outro(5)} <br>`)
+
+        //Função como variável
+        let teste = function (x) { return `${x**2} <br>` }
+
+        document.write (teste(2))
+
+        //Recursividade - fatorial
+        function fatorial(f) {
+            if (f == 1) { return 1 }
+
+            else { return f * fatorial(f - 1) }
+        }
+
+        document.write (fatorial(3))
+        
+    </script>
+
+</body>
+</html>
