@@ -1,0 +1,52 @@
+@charset 'UTF-8';
+
+body { background-color:#0a050e9c; font-family:Calibri; }
+
+/* Padrao para todas as tags */
+span, section, select, footer { display:block; }
+
+
+/* Cabeçalho, conteúdo e rodapé */
+header, footer { color:#F2F2F2; } 
+
+header, section, footer { text-align:center; }
+
+
+/*Cabeçalho*/
+
+h1 { font-size:35px; }
+
+span { font-size:25px; margin-top:-15px; margin-bottom:22px; }
+
+
+/* Interação com o usuário */
+section {
+    background-color:#F2F2F2;
+    box-shadow:1px 1px 3px rgba(0,0,0,.7); 
+    width:350px; 
+    margin:auto;  
+}
+
+
+/* Conteúdo, interação e exibição */
+section, fieldset, select { border-radius:20px; }
+
+section, select { padding:9px; }
+
+legend, select { font-size:15px; }
+
+input { border-radius:5px; }
+
+#numberUser { width:120px; }
+
+
+/*Valores*/
+select { width:215px; margin:15px; overflow:hidden; }
+
+
+/*Rodapé*/
+footer { margin:10px auto; }
+
+a { text-decoration:underline; color:#F2F2F2; }
+
+a:hover { text-decoration:none; }
