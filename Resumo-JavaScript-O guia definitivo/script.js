@@ -6,44 +6,17 @@ body.style.letterSpacing = '2px'
 body.style.display = 'grid'
 body.style.justifyContent = 'center'
 
-//Variáveis
+body.innerHTML += '<style>* { border:0; margin:0; box-sizing:border-box; padding:0; } article { max-width:500px; border:2px solid black; padding-left:30px; padding-top:3px; padding-bottom:10px; padding-right:10px; margin:20px auto; } li { margin-top:20px; } h1, h2, h3 { text-align:center; margin-top:25px; margin-bottom:5px; } ul>li>ul>li { margin-left:20px; } </style>'
+
 var item = 2
-body.innerHTML += `<h1>Resumo - JavaScript - O guia definitivo</h1> <span>Obs: conteúdo adicionado no JavaScript</span> <ul> <li>Variável é um nome simbólico para valor</li> <li>Utilize <q>=</q> para atribuir um valor a variavel <ul> <li>EX: var item = 2 -- Utilizando variáveis: ${item}</li> </ul></li> </ul>`
+body.innerHTML += `<h1>Resumo - JavaScript - O guia definitivo</h1> <span style="text-align:center;">Obs: conteúdo adicionado no JavaScript</span> <article><ul> <li>Variável é um nome simbólico para valor</li> <li>Utilize <q>=</q> para atribuir um valor a variável <ul> <li>EX: var item = 2 -- Utilizando variáveis: ${item}</li> </ul></li> </ul></article>`
 
-//Tipos de variáveis
-body.innerHTML += '<h1>Tipos de variáveis</h1> <ul><li>x = 1 -- Números</li> <li>x = 0.01 -- Utilize "Number" para números inteiros e reais</li> <li>x = "hello world" -- Utilize aspas para strings</li> <li>x = true ou x = false -- valores booleanos</li> <li>x =  null -- significa nenhum valor</li> <li>x =  undefined -- significa indefinido</li> </ul>'
+body.innerHTML += '<article><h2>Tipos de variáveis</h2> <ul><li>x = 1 -- Números</li> <li>x = 0.01 -- Utilize "Number" para números inteiros e reais</li> <li>x = "hello world" -- Utilize aspas para strings</li> <li>x = true ou x = false -- valores booleanos</li> <li>x =  null -- significa nenhum valor</li> <li>x =  undefined -- significa indefinido</li> </ul></article>'
 
-//Manipulação de arrays e objetos 
-body.innerHTML += '<h1>Manipulação de arrays e objetos</h1> <ul><li>Objetos: uma coleção de pares (seja nome, valor ou string) <ul><li>Ex: var livros = { <br> cornwell: "O arqueiro", <br>napoleonHill: "Mais esperto que o diabo" <br>}</li></ul></li></ul>'
+body.innerHTML += '<article><h2>Manipulação de arrays e objetos</h2> <ul><li>Objetos: uma coleção de pares (seja nome, valor ou string) <ul><li>Ex: var livros = { <br> cornwell: "O arqueiro", <br>napoleonHill: "Mais esperto que o diabo" <br>}</li></ul></li></ul> <h3>Características</h3> <ul><li>Objetos são colocados entre chaves</li> <li>A propriedade Cornwell tem como valor "O arqueiro"</li> <li>A <q>}</q> marca o fim do objeto</li> <li>É possível acessar a propriedade do objeto com <q>.</q> ou <q>[]</q></li> <ul><li style="margin-left:20px;">Ex: livros.cornwell ou livros[cornwell]</li></ul> <li>É possível criar novas propriedades por meio de atribuição <ul><li>livros.asimov = "Eu robô"</li></ul></li> <li>livros.mundialPalmeiras = {} --> objeto vazio e sem propriedade</li> </ul></article>'
 
-//             - Objetos são colocados entre chaves
-// - A propriedade cornwell tem como valor 'o arqueiro'
-//    - A chave marca o fim do objeto
-//       - É possível acessar a propriedade de um objeto com '.' ou '[]'
-//          - Ex: livros.cornwell ou livros[cornwell]
-//             - livros.asimov = 'eu robô' —Crie novas propriedades por meio de atribuição
-//                - livros.mundialPalmeiras = { } — objeto vazio e sem propriedade
+body.innerHTML += '<article><h2>Arrays (listas indexadas numericamente)</h2> <ul><li>var primos = [2, 3, 5, 7] --> array com quatro valores armazenados entre <q>[]</q></li> <ul><li style="margin-left:20px;">primos[0] --> acessa o primeiro número(2 no caso)</li></ul> <li>A conta pelo array começa pelo zero</li> <li>primos.length --> conta a quantidade de elementos do array(4)</li> <li>primos[primos.length - 1] --> pega o ultimo elemento do array(7 no caso)</li> <li>primos[4] = 11 --> adiciona um novo elemento</li> <li>primos[4] = 13 --> altera o elemento existente(trocou 11 por 13)</li> <li>var vazio = [] --> array sem elemento</li> <ul><li style="margin-left:20px;">vazio.length --> retornará zero</li></ul></ul> <h3>Os arrays podem conter objetos e vice-versa</h3> <ul><li>Ex: var pontos = [{ coringao: 88, flamengo: 60, palmeiras: 40 }, { fluminense: 33, grêmio: 13, cruzeiro: 0 }] --> Um array com dois elementos onde cada elemento é um objeto</li> <li>var vitorias = { coringao: [[10, 9], [8, 7]], flamengo: [[6, 4], [5, 3]] } --> Um objeto com duas propriedades onde cada valor é um array (array dentro de outro array)</li> <ul><li style="margin-left:20px;">Tal característica é chamada de expressão inicializadora</li></ul> <li>Uma expressão pode ser avaliada para produzir um valor</li> <ul><li style="margin-left:20px;">Ex: Utilizar <q>.</q> ou <q>[]</q> para se referir ao valor dentro de um objeto. Podem ser formados por operadores: 3 + 2 --> 5 - adição - operadores atuam sobre os valores(operandos) para produzir um novo valor </li> <li>"3" + "3" --> 33 - ocorre concatenação de duas strings</li></ul> </ul></article>'
 
-//                   - Arrays(listas indexadas numericamente)
-//                   - var primos = [2, 3, 5, 7] — array com 4 valores armazenados entre' []'
-//                      - primos[0] — acessa primeiro número(no caso o 2)
-//                         - A conta num array começa pelo 0
-//                            - primos.length — quantidade de elementos(4)
-//                               - primos[primos.length - 1] — o último elemento do array(7)
-//                                  - primos[4] = 11 — adiciona um novo elemento
-//                                     - primos[4] = 13 — altera o elemento existente(trocou o 11 por 13)
-//                                        - var vazio = [] — array sem elemento
-// - vazio.length — retornará zero
+body.innerHTML += '<article><h2>Abreviações - igualdade e relacionais - Operadores lógicos</h2> <ul><li>count++</li> <li>count--</li> <li>count+=2</li> <li>count*=3</li> <li>count --> nome de variáveis também são expressões</li></ul> <ul><li>var x = 2 -- var y = 3</li> <li>x == y --> false</li> <li>x != y --> true</li></ul> <ul><li>(x == 2) && (y == 3) --> comparação verdadeira</li> <li>x > 3 || y < 3 --> comparação falsa</li> <li>!(x == y) --> true - inverte um valor booleano</li> <li>&& --> E | || --> OU | ! --> inversão</li><ul></article>'
 
-//    - Os arrays podem conter objetos e vice - versa
-
-//       - var pontos = [{ coringao: 88, flamengo: 60, palmeiras: 40 }, { fluminense: 33, grêmio: 13, cruzeiro: 0 }]  — um array com 2 elementos onde cada elemento é um objeto
-//          - var vitorias = { coringao: [[10, 9], [8, 7]], flamengo: [[6, 4], [5, 3]] } — Um objeto com duas propriedades onde cada valor é um array.Array dentro de outro array
-
-// -Tal característica é chamada de expressão inicializadora
-
-//    - Uma expressão é uma frase em que pode ser avaliada para produzir um valor
-
-//       - Ex: Utilizar.ou[] para se referir ao valor dentro de um objeto é chamado de expressão
-//          - Expressões podem ser formadas por operadores.
-//         - Ex: 3 + 2 — ⇒ 5: adição — operadores atuam sobre os valores(operandos) para produzir um novo valor
+body.innerHTML += '<q>Se as frases em JavaScript são expressões, então as sentenças completas são instruções</q>'
