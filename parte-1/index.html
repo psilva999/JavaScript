@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang='pt-BR'>
+<head>
+
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <meta http-equiv="X-UA-Compatible" content='IE=edge'>
+
+  <meta name='description' content=''>
+  <meta name='keywords' content=''>
+  <meta charset='UTF-8'>
+
+  <title></title>
+  <link rel='stylesheet' href='style.css'>
+  <link rel='shortcut icon' type='image/icon' href='.ico'>
+</head>
+
+<body>
+  <main>
+    <h1 class='ativo'>HELLO WORLD!!!</h1>
+  </main>
+
+  <script>
+    alert(window.location.href)
+
+    document.querySelector('.ativo').style.background = 'red'
+
+    alert(navigator.language)
+
+    alert(window.innerWidth)
+  </script>
+
+  <script>
+    document.body.addEventListener('keydown', (modo) => {
+      modo = modo || window.event
+      let key = modo.which || modo.keyCode,
+          ctrl = modo.ctrlKey ? modo.ctrlKey : (key === 17)
+
+      if (key == 67 && ctrl) {
+        alert('ctrl + c foi pressionado')
+      }
+    }, false)
+  </script>
+
+  <script src='script.js'></script>
+</body>
+</html>

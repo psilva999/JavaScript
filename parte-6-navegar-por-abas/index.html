@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang='pt-BR'>
+<head>
+
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <meta http-equiv="X-UA-Compatible" content='IE=edge'>
+
+  <meta name='description' content=''>
+  <meta name='keywords' content=''>
+  <meta charset='UTF-8'>
+
+  <style>
+    .js {
+      background:orange;
+    }
+
+    .js p {
+      display:none;
+    }
+
+    .active {
+      display:block !important;
+      background:red;
+    }
+
+    li {
+      opacity:.6;
+      transition:.3s;
+      cursor:pointer;
+    }
+
+    li:hover {
+      transition:.3s;
+      opacity:1;
+      animation:show-content .6s linear forwards;
+    }
+
+    @keyframes show-content {
+      from {
+        opacity:0;
+        transform:translate3d(-1.25rem, 0rem, 0rem);
+      }
+
+      to {
+        opacity:1;
+        transform:translate3d(0, 0, 0);
+      }
+    }
+  </style>
+
+  <script>
+    document.documentElement.className += ' js'
+  </script>
+  <title></title>
+</head>
+
+<body>
+  <li>jota</li>
+  <li>parker</li>
+  <li>batman</li>
+
+  <p>jota jota jameson jotou</p>
+  <p>peter parker parkeia</p>
+  <p>batman bateia</p>
+  <script src='script.js'></script>
+</body>
+</html>

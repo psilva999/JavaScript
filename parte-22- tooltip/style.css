@@ -1,0 +1,21 @@
+@charset 'UTF-8';
+
+.tooltip {
+  position:absolute;
+  background:red;
+  width:8rem;
+  text-align:center;
+  top:0;
+  left:0;
+  z-index:500;
+}
+
+body {
+  display:grid;
+  justify-content:center;
+}
+
+div:nth-child(1) {
+  display:flex;
+  align-items:center;
+}

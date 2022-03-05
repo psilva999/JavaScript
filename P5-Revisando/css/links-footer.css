@@ -1,8 +1,0 @@
-@charset "UTF-8";
-
-  a { text-decoration:underline; color:black; }
-
-  a:hover { text-decoration:none; color:rgba(0,0,0,.8); }
-
-
-  footer { background-color:#FBB61C; border-radius:60px; height:150px; text-align:center; font-size:22px; }
