@@ -1,0 +1,29 @@
+@import 'variables';
+
+* {
+  border:$padrao-none;
+  margin:$padrao-none;
+  padding:$padrao-none;
+  box-sizing:$borda-preechida;
+  font-family:calibri, sans-serif;
+}
+
+body {
+  display:$flexivel;
+  justify-content:center;
+  align-items:center;
+  width:$max-screen;
+  height:100vh;
+
+  section {
+    display:$flexivel;
+    width:$max-screen;
+    gap:.5rem;
+  }
+
+  img {
+    max-width:4rem;
+    max-height:6rem;
+    border-radius:.6rem;
+  }
+}

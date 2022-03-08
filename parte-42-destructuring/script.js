@@ -33,7 +33,7 @@ console.log(livros);
 console.log(videos);
 
 //É possível aninhar uma desestruturação dentro de outra.
-const cliente = {
+const clientse = {
   nome: 'Andre',
   compras: {
     digitais: {
