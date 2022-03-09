@@ -1,2 +1,2 @@
 # JavaScript
-  Aprendendo a criar interações com JS
+ Learning to create interactions with JavaScript
