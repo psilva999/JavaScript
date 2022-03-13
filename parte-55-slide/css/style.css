@@ -26,11 +26,10 @@ body section {
   display: -ms-flexbox;
   display: flex;
   gap: 5rem;
-  height: 35rem;
+  height: 30rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2rem 0rem 2rem 3rem;
   position: absolute;
   left: 2rem;
 }
@@ -58,5 +57,33 @@ body img {
   min-width: 21rem;
   height: 100%;
   border-radius: .6rem;
+}
+
+body button {
+  position: fixed;
+  bottom: 1rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.7);
+  font-size: 1.3rem;
+  letter-spacing: .2rem;
+  padding: .5rem 1rem .5rem 1rem;
+  border-radius: .5rem;
+  cursor: pointer;
+  opacity: .8;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+body button:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  opacity: 1;
+}
+
+body [data-prev] {
+  left: 1rem;
+}
+
+body [data-next] {
+  right: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

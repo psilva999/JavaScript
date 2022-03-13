@@ -18,9 +18,8 @@ body {
   section {
     display:$flexivel;
     gap:5rem;
-    height:35rem;
+    height:30rem;
     justify-content:space-between;
-    padding:2rem 0rem 2rem 3rem;
     position:absolute;
     left:2rem;
   }
@@ -45,5 +44,31 @@ body {
     min-width:21rem;
     height:100%;
     border-radius:.6rem;
+  }
+
+  button {
+    position:fixed;
+    bottom:1rem;
+    border:.1rem solid rgba(0,0,0,.7);
+    font-size:1.3rem;
+    letter-spacing:.2rem;
+    padding:.5rem 1rem .5rem 1rem;
+    border-radius:.5rem;
+    cursor:pointer;
+    opacity:.8;
+    transition:.3s;
+  }
+
+  button:hover {
+    transition:.3s;
+    opacity:1;
+  }
+
+  [data-prev] {
+    left:1rem;
+  }
+
+  [data-next] {
+    right:1rem;
   }
 }
