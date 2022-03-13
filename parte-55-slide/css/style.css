@@ -35,8 +35,23 @@ body section {
   left: 2rem;
 }
 
+body section:hover {
+  will-change: transform;
+}
+
 body li {
   list-style: none;
+  opacity: .6;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+body li.active {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 body img {
