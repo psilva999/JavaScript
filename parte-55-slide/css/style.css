@@ -38,6 +38,29 @@ body section:hover {
   will-change: transform;
 }
 
+body [data-control='slide'] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  position: absolute;
+  top: .5rem;
+}
+
+body [data-control='slide'] li.active {
+  background: orangered;
+}
+
+body [data-control='slide'] a {
+  color: #F2F2F2;
+  text-decoration: none;
+  padding: .25rem .5rem;
+  background: rgba(0, 0, 0, 0.7);
+}
+
 body li {
   list-style: none;
   opacity: .6;

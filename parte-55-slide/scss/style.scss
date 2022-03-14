@@ -28,6 +28,25 @@ body {
     will-change:transform;
   }
 
+  [data-control='slide'] {
+    display:flex;
+    justify-content:center;
+    gap:1rem;
+    position:absolute;
+    top:.5rem;
+  }
+
+  [data-control='slide'] li.active {
+    background:orangered;
+  }
+
+  [data-control='slide'] a {
+    color:#F2F2F2;
+    text-decoration:none;
+    padding:.25rem .5rem;
+    background:rgba(0,0,0,.7);
+  }
+
   li {
     list-style:$padrao-none;
     opacity:.6;
