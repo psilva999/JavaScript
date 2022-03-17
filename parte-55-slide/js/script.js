@@ -4,4 +4,4 @@ const slide = new SlideNav('section', 'body')
 
 slide.init()
 slide.addArrow('[data-prev]', '[data-next]')
-slide.addControl()
+slide.addControl('div')

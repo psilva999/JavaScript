@@ -12,6 +12,7 @@ function dropdown(e) {
   this.classList.toggle("active")
 
   fechaPorFora(this, ['touchstart', 'click'], () => {
+    
     this.classList.remove("active")
   })
 }
